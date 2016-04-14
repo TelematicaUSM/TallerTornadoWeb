@@ -58,6 +58,8 @@ o borrar).
 
 # To do
 
+- [ ]   Agregar enlaces a la documentación de Tornado y
+        HTML.
 - [ ]   Hacer una parte que agregue soporte para móviles,
         cambiando el tamaño del *viewport*.
 - [ ]   Hacer una parte que agregue una protección de
