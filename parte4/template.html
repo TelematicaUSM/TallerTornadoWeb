@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+<title>Lista del Super</title>
+
+<h1>Elementos:</h1>
+
+{% for elemento in lista_arg %}
+    <p>
+        <label>
+            <input type="checkbox">
+            {{ elemento }}
+        </label>
+    </p>
+{% end %}
+
+<h1>Agregar elemento:</h1>
+<form action="/lista" method="post">
+    <p>
+        <label>
+            Nombre:
+            <input type="text" name="nombre" placeholder="zanahorias" autofocus required>
+        </label>
+    </p>
+
+    <p><input type="submit" value="Agregar"></p>
+</form>

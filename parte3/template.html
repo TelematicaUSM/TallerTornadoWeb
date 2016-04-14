@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+<title>Lista del Super</title>
+
+<h1>Elementos:</h1>
+
+{% for elemento in lista_arg %}
+    <p>
+        <label>
+            <input type="checkbox">
+            {{ elemento }}
+        </label>
+    </p>
+{% end %}
