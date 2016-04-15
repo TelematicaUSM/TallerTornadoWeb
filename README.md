@@ -13,6 +13,17 @@ Tornado.
 El taller está organizado en partes, las cuales agregan
 funcionalidad incrementalmente a la aplicación.
 
+# Documentación
+
+Para obtener mayor información sobre los tópicos de este
+taller se recomienda visitar los siguientes sitios de
+documentación:
+
+*   <https://developer.mozilla.org/en-US/docs/Web/HTML>
+*   <http://www.w3schools.com/>
+*   <https://developers.whatwg.org/>
+*   <http://www.tornadoweb.org/en/stable/>
+
 # Partes
 
 ## Parte 1
@@ -58,7 +69,7 @@ o borrar).
 
 # To do
 
-- [ ]   Agregar enlaces a la documentación de Tornado y
+- [x]   Agregar enlaces a la documentación de Tornado y
         HTML.
 - [ ]   Hacer una parte que agregue soporte para móviles,
         cambiando el tamaño del *viewport*.
