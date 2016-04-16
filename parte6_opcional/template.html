@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport"
+      content="height=device-height,width=device-width">
+
+<title>Lista del Super</title>
+
+<h1>Elementos:</h1>
+<form action='/lista' method='post'>
+    <input type="hidden" name="operacion" value="borrar">
+
+    {% for i in range(len(lista_arg)) %}
+        <p>
+            <label>
+                <input type="checkbox" name="elementos" value="{{ i }}">
+                {{ lista_arg[i] }}
+            </label>
+        </p>
+    {% end %}
+
+    <p><input type="submit" value="Borrar"></p>
+</form>
+
+<h1>Agregar elemento:</h1>
+<form action="/lista" method="post">
+    <input type="hidden" name="operacion" value="agregar">
+
+    <p>
+        <label>
+            Nombre:
+            <input type="text" name="nombre" placeholder="zanahorias" autofocus required>
+        </label>
+    </p>
+
+    <p><input type="submit" value="Agregar"></p>
+</form>

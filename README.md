@@ -67,12 +67,20 @@ ocultos (`<input type="hidden">`), que permiten identificar
 la operación que se desea realizar sobre los datos (agregar
 o borrar).
 
+## Parte 6 (opcional)
+
+Aquí se agrega la etiqueta `<meta name="viewport">`. Esta
+etiqueta controla el tamaño del *viewport* con el fin de que
+la aplicación se vea correctamente en dispositivos móviles.
+
 # To do
 
 - [x]   Agregar enlaces a la documentación de Tornado y
         HTML.
-- [ ]   Hacer una parte que agregue soporte para móviles,
+- [x]   Hacer una parte que agregue soporte para móviles,
         cambiando el tamaño del *viewport*.
+- [ ]   Estudiar la posibilidad de omitir el cierre de la
+        etiqueta `<p>`.
 - [ ]   Hacer una parte que agregue una protección de
         edición múltiple basada en versiones.
 - [ ]   Hacer una parte que impida elementos duplicados.
