@@ -79,7 +79,7 @@ la aplicación se vea correctamente en dispositivos móviles.
         HTML.
 - [x]   Hacer una parte que agregue soporte para móviles,
         cambiando el tamaño del *viewport*.
-- [ ]   Estudiar la posibilidad de omitir el cierre de la
+- [x]   Estudiar la posibilidad de omitir el cierre de la
         etiqueta `<p>`.
 - [ ]   Hacer una parte que agregue una protección de
         edición múltiple basada en versiones.
