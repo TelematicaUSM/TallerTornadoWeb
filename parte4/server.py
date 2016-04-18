@@ -9,10 +9,8 @@ class ListHandler(RequestHandler):
         self.render('template.html', lista_arg=lista)
 
     def post(self):
-        lista.append(
-            self.get_argument('nombre')
-        )
-
+        nombre_elemento = self.get_argument('nombre')
+        lista.append(nombre_elemento)
         self.get()
 
 try:

@@ -7,10 +7,5 @@
 <h1>Elementos:</h1>
 
 {% for elemento in lista_arg %}
-    <p>
-        <label>
-            <input type="checkbox">
-            {{ elemento }}
-        </label>
-    </p>
+    <p><label><input type="checkbox">{{ elemento }}</label></p>
 {% end %}

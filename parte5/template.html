@@ -5,7 +5,7 @@
 <title>Lista del Super</title>
 
 <h1>Elementos:</h1>
-<form action='/lista' method='post'>
+<form action="/lista" method="post">
     <input type="hidden" name="operacion" value="borrar">
 
     {% for i in range(len(lista_arg)) %}
@@ -27,7 +27,8 @@
     <p>
         <label>
             Nombre:
-            <input type="text" name="nombre" placeholder="zanahorias" autofocus required>
+            <input type="text" name="nombre" placeholder="zanahorias" autofocus
+                   required>
         </label>
     </p>
 

@@ -81,7 +81,8 @@ la aplicación se vea correctamente en dispositivos móviles.
         cambiando el tamaño del *viewport*.
 - [x]   Estudiar la posibilidad de omitir el cierre de la
         etiqueta `<p>`.
-- [ ]   Ajustar a 80 caracteres.
+- [x]   Ajustar a 80 caracteres.
+- [ ]   Agregar tests.
 - [ ]   Hacer una parte que agregue una protección de
         edición múltiple basada en versiones.
 - [ ]   Hacer una parte que impida elementos duplicados.

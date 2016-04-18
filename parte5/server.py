@@ -12,9 +12,8 @@ class ListHandler(RequestHandler):
         operacion = self.get_argument('operacion')
 
         if operacion == 'agregar':
-            lista.append(
-                self.get_argument('nombre')
-            )
+            nombre_elemento = self.get_argument('nombre')
+            lista.append(nombre_elemento)
 
         elif operacion == 'borrar':
             elementos_str = self.get_arguments('elementos')

@@ -7,12 +7,7 @@
 <h1>Elementos:</h1>
 
 {% for elemento in lista_arg %}
-    <p>
-        <label>
-            <input type="checkbox">
-            {{ elemento }}
-        </label>
-    </p>
+    <p><label><input type="checkbox">{{ elemento }}</label></p>
 {% end %}
 
 <h1>Agregar elemento:</h1>
@@ -20,7 +15,8 @@
     <p>
         <label>
             Nombre:
-            <input type="text" name="nombre" placeholder="zanahorias" autofocus required>
+            <input type="text" name="nombre" placeholder="zanahorias" autofocus
+                   required>
         </label>
     </p>
 
