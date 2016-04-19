@@ -24,6 +24,18 @@ documentación:
 *   <https://developers.whatwg.org/>
 *   <http://www.tornadoweb.org/en/stable/>
 
+# Consideraciones
+
+*   Los archivos `__init__.py` sólo son necesarios para la
+    ejecución de las pruebas unitarias. No son necesarios
+    para el funcionamiento de los programas y pueden
+    omitirse en un proyecto que no use pruebas unitarias.
+
+*   Los archivos `test.py` contienen las pruebas unitarias
+    de cada parte. No son necesarios para el funcionamiento
+    de los programas y pueden omitirse en un proyecto que no
+    use pruebas unitarias.
+
 # Partes
 
 ## Parte 1
