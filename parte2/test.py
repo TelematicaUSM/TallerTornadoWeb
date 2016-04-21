@@ -1,13 +1,10 @@
-import json
+from tornado.testing import gen_test, main
 
-from tornado.httpclient import HTTPRequest
-from tornado.httputil import url_concat
-from tornado.testing import AsyncHTTPTestCase, gen_test, main
-
+from async_html_test_case import AsyncHTMLTestCase
 from . import server
 
 
-class TestApp(AsyncHTTPTestCase):
+class AppTestCase(AsyncHTMLTestCase):
     def get_app(self):
         return server.new_app()
 
@@ -16,6 +13,7 @@ class TestApp(AsyncHTTPTestCase):
         url = self.get_url('/lista')
         response = yield self.http_client.fetch(url)
 
+        yield self.assertIsValidHTML(response)
         self.assertEqual(response.code, 200, 'La respuesta no fue OK (200)')
         self.assertRegex(
             response.body.decode(),
@@ -27,22 +25,6 @@ class TestApp(AsyncHTTPTestCase):
             r'+',                               # One or more times
             'La respuesta no es una lista intercalada de checkboxes y '
             'etiquetas'
-        )
-
-        validator_request = HTTPRequest(
-            url_concat('https://validator.w3.org/nu/', {'out': 'json'}),
-            'POST',
-            {'Content-Type': response.headers['Content-Type']},
-            response.body
-        )
-        validator_response = yield self.http_client.fetch(validator_request)
-        validator_results = json.loads(
-            validator_response.body.decode()
-        )
-        self.assertEqual(
-            len(validator_results['messages']),
-            0,
-            json.dumps(validator_results, indent=2)
         )
 
 
